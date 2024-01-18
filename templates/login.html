@@ -1,0 +1,37 @@
+<!-- templates/login.html -->
+<!DOCTYPE html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="container">
+               
+                <ul class="navbar">
+                    <li><a href="{{ url_for('routes.home') }}">Home</a></li>
+                    <li><a href="{{ url_for('routes.shop') }}">Shop</a></li>
+                    <li><a href="{{ url_for('routes.about') }}">About</a></li>
+                    <li><a href="{{ url_for('routes.contact') }}">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Login</h1>
+        <form method="post" action="{{ url_for('routes.login') }}">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+
+            <input type="submit" value="Login">
+        </form>
+        <p>Don't have an account? <a href="{{ url_for('routes.signup') }}">Sign Up</a></p>
+       
+    </div>
+</body>

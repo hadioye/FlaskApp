@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Shop</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+               
+                <ul class="navbar">
+                    <li><a href="{{ url_for('routes.home') }}">Home</a></li>
+                    <li><a href="{{ url_for('routes.shop') }}">Shop</a></li>
+                    <li><a href="{{ url_for('routes.about') }}">About</a></li>
+                    <li><a href="{{ url_for('routes.contact') }}">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Welcome to the Homepage!</h1>
+        <p>Please choose an option:</p>
+        <ul>
+            <li><a href="#">Category 1</a></li>
+            <li><a href="#">Category 2</a></li>
+            <li><a href="#">Category 3</a></li>
+            <!-- Add more categories here -->
+        </ul>
+        <!-- Add more content and functionalities here -->
+    </div>
+</body>
+

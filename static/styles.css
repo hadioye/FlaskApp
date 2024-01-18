@@ -1,0 +1,206 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.container {
+    max-width: 800px; /* Increase the container width for a better layout */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+}
+
+ul:not(.navbar) {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Make the list items wrap to the next line if they don't fit */
+    justify-content: space-between; /* Distribute items evenly between the two columns */
+}
+
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #0056b3;
+}
+
+/* Common styles for form fields */
+form label {
+    display: block;
+    margin-left: 23%;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    width: 50%; /* Change width to 100% for better form input appearance */
+    padding: 10px;
+    margin-left: 23%;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Styles for login and signup pages */
+.navbar {
+    background-color: hsl(211, 100%, 50%);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    display: table; /* Change to display as table */
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0; /* Remove default margin */
+    width: 100%; /* Make the table fill the available width */
+}
+
+.navbar li {
+    display: table-cell; /* Change to display as table cell */
+    text-align: center; /* Center align the table cell content */
+    vertical-align: middle; /* Vertically center the table cell content */
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #f8f8f8;
+}
+
+/* Align buttons properly in the nav bar */
+.button-container {
+    margin-left: 75%; /* Push the buttons to the right side */
+}
+
+
+
+/* Add this CSS to your styles.css or within a <style> tag in your HTML */
+
+/* Style the table to have a border-collapse */
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  /* Style the cells within the table */
+  td {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  /* Add a border to the right of the first column */
+  td:first-child {
+    border-right: 1px solid #ddd;
+  }
+  
+  /* Update styles for the list items inside .product-column */
+.product-column ul li {
+    flex-basis: 48%; /* Set the width of each list item */
+    margin-bottom: 10px;
+    background-color: #f0f0f0; /* Add a background color for the tiles */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the images within the list items */
+.product-column ul li img {
+    display: block;
+    width: 100%; /* Ensure the image covers the entire container */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 4px;
+}
+
+/* Apply styles to the anchor tags inside the list items */
+.product-column ul li a {
+    display: block;
+    text-align: center;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Apply hover effect for the anchor tags */
+.product-column ul li a:hover {
+    color: #0056b3;
+}
+
+
+.page-links-container{
+    justify-content: center;
+}
+
+.page-link{
+    
+
+}
+
+/* Apply styles to the textarea element */
+#message {
+    width: 50%;
+    height: 150px;
+    padding: 10px;
+    resize: vertical; /* Allow vertical resizing */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-left: 25%;
+  }
+  
+  /* Optional: Add some margin between the textarea and the following element */
+  #message + br {
+    margin-top: 10px;
+  }
+  

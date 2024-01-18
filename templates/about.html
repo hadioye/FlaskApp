@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <ul class="navbar" id="nav-buttons">
+                    <li><a href="{{ url_for('routes.home') }}">Home</a></li>
+                    <li><a href="{{ url_for('routes.shop') }}">Shop</a></li>
+                    <li><a href="{{ url_for('routes.about') }}">About</a></li>
+                    <li><a href="{{ url_for('routes.contact') }}">Contact</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Learn More About Us!</h1>
+        <p class="about-text">
+            <h2>About the Project:</h2>
+            This website is a university project created for my university's second semester. 
+            It is a fully functional e-commerce website built using Python Flask as the web framework. The project 
+            demonstrates various functionalities like user authentication, product browsing, shopping cart, and 
+            order processing.
+            
+            <h2>Technologies Used:</h2>
+            The website utilizes a combination of technologies to deliver a seamless user experience. Python Flask 
+            is the core web framework that powers the server-side logic. For data storage, we use a PostgreSQL 
+            database managed by Python's SQLAlchemy library. The dynamic rendering of web pages is achieved with 
+            the help of HTML, CSS, and Jinja2 templating engine.
+
+            <h2>Database Schema:</h2>
+            The database schema is designed to efficiently store and manage product details, user information, and 
+            order data. The tables are normalized to ensure data integrity and reduce redundancy. The schema includes 
+            tables for products, users, orders, and order items, with appropriate relationships between them.
+
+            <h2>Routing and Navigation:</h2>
+            The website uses Flask's routing capabilities to handle HTTP requests and map them to specific functions 
+            in the routes.py file. This ensures seamless navigation between different pages, such as the Home, Shop, 
+            About, and Contact pages.
+
+            <h2>Project Author:</h2>
+            I am the student behind this project, and it has been a challenging and rewarding experience to work on 
+            this e-commerce website. If you have any questions or inquiries, please don't hesitate to contact me 
+            through the Contact page.
+
+            Thank you for visiting our website!
+        </p>
+        
+        <!-- Add more content and functionalities here -->
+    </div>
+</body>
+</html>
